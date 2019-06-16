@@ -13,11 +13,11 @@
 	try {
 		Connection conn = Conecta.getConnection();
 		String sql = "DELETE FROM usuariolt WHERE id = ?";
-		PreparedStatement sts = conn.prepareStatement(sql);
+		PreparedStatement stmt = conn.prepareStatement(sql);
 		
-		sts.setInt(1,id);
-		sts.execute();
-		sts.close();
+		stmt.setInt(1,id);
+		stmt.execute();
+		stmt.close();
 		conn.close();
 		response.sendRedirect("index.jsp");
 		

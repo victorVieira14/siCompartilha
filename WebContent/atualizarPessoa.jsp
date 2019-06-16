@@ -12,13 +12,13 @@
 				try{
 						Connection conn = Conecta.getConnection();
 						String sql = "SELECT * FROM usuariolt WHERE id = "+id;
-						PreparedStatement psm = conn.prepareStatement(sql);
-						ResultSet rs = psm.executeQuery(sql);
+						PreparedStatement stmt = conn.prepareStatement(sql);
+						ResultSet resultado = stmt.executeQuery(sql);
 						
-						while(rs.next()){
-							nome = rs.getString("primNome");
-							ultimo = rs.getString("ultNome");
-							msg = rs.getString("mensagem");
+						while(resultado.next()){
+							nome = resultado.getString("primNome");
+							ultimo = resultado.getString("ultNome");
+							msg = resultado.getString("mensagem");
 						}
 								
 				}catch(SQLException e){

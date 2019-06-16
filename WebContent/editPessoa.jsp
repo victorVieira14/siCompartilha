@@ -13,15 +13,15 @@
 			String sql = "update usuariolt set primNome = ?, ultNome = ?, mensagem = ? WHERE id = " + id;
 			
 			
-			PreparedStatement sts = conn.prepareStatement(sql);
+			PreparedStatement stmt = conn.prepareStatement(sql);
 		
 			//assemelha se ao bindParam
-			sts.setString(1, nome);
-			sts.setString(2, ultNome);
-			sts.setString(3, msg);
+			stmt.setString(1, nome);
+			stmt.setString(2, ultNome);
+			stmt.setString(3, msg);
 			
 			
-			sts.execute();
+			stmt.execute();
 			response.sendRedirect("index.jsp");
 			
 		}catch (SQLException e){
