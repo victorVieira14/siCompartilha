@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"  import="java.sql.*" %> 
 <%@ page language="java" import="conexao.Conecta" %>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="pt-br">
   <head>
@@ -8,8 +10,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="/IMG/si.jpg"/>
-
+    
+    <link rel="icon" type="text/css" href="IMG/si.jpg"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- Font Awesome CSS -->
@@ -53,6 +55,8 @@
 
     <!-- Imagem de fundo -->
     <div class="view" style="background-image: url(IMG/fundo.jpg); background-repeat: no-repeat; background-size: cover;">
+
+
 
 
 
@@ -130,7 +134,7 @@
             </tbody>
         </table>
 
-        <a href="cadastrarPessoa.jsp" class="btn btn-lg btn-block btn-primary mt-5">
+        <a href="cadastrarPessoa.jsp" style=" background-color: #27408B;" class="btn text-white btn-lg btn-block mt-5">
             <i class="fa fa-user-plus mr-2"></i> Adicionar Pessoa
         </a>
         

@@ -34,7 +34,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="/IMG/si.jpg"/>
+    
+    <link rel="icon" type="text/css" href="IMG/si.jpg"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -114,7 +115,7 @@
                                             <div class="form-group">
                                                 <label for="sobrenomePessoa">Último nome</label>
                                                 <input type="text" class="form-control" value="<% out.print(ultimo); %>" name="uNome" required>
-                                                <small class="form-text text-muted">Vieira da Silva.</small>
+                                                <small class="form-text text-muted">Ex.: Silva.</small>
                                             </div>
                                         </div>
                                     </div>
